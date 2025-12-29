@@ -1,0 +1,27 @@
+body {background-color: GhostWhite; font-family: Palatino; font-size: 18px;}
+.content {
+line-height: 170%;
+  max-width: 850px;
+  margin: auto;
+  background-color: GhostWhite;
+  padding: 10px;
+}
+/* Styling the container */
+.container {
+    display: flex; /* Using flexbox to align image and text */
+    gap: 20px; /* Adds space between the image and the text */
+    align-items: center; /* Vertically center the content */
+    margin-top: 20px;
+}
+
+/* Styling the image */
+.image img {
+    width: 350px; /* Adjust the image size */
+    height: auto;
+}
+
+/* Styling the text */
+.text {
+    font-size: 18px; /* Increase font size */
+    max-width: 700px; /* Limit the width of the text */
+}
