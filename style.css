@@ -1,31 +1,134 @@
-body {
-  background-color: white;
-  font-family: "Palatino Linotype", Palatino, serif;
-  font-size: 18px;
-  line-height: 1.7;
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.content {
-  max-width: 850px;
-  margin: auto;
-  padding: 20px;
+body {
+  background-color: #f9f8f6;
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #2b2b2b;
 }
 
+/* ── Layout ── */
+.content {
+  max-width: 860px;
+  margin: 60px auto 80px;
+  padding: 0 32px;
+}
+
+/* ── Header ── */
+header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1c3557;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* ── Profile block ── */
 .container {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-top: 20px;
+  align-items: flex-start;
+  gap: 36px;
+  margin-bottom: 48px;
 }
 
 .image img {
-  width: 350px;
+  width: 200px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .text {
-  max-width: 700px;
+  font-size: 1rem;
+  color: #3a3a3a;
+  max-width: 580px;
+  padding-top: 4px;
+}
+
+/* ── Divider ── */
+hr {
+  border: none;
+  border-top: 1px solid #e2e0da;
+  margin: 36px 0;
+}
+
+/* ── Sections ── */
+section {
+  margin-bottom: 36px;
+}
+
+section h1 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1c3557;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid #c8d4e3;
+}
+
+/* ── Lists ── */
+ul {
+  padding-left: 18px;
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 16px;
+  color: #2b2b2b;
+}
+
+/* ── Papers ── */
+.journal {
+  color: #555;
+  font-size: 0.92rem;
+  display: block;
+  margin-top: 2px;
+}
+
+/* ── Education ── */
+.education-item {
+  margin-bottom: 10px;
+}
+
+.degree {
+  font-weight: 600;
+  color: #1c3557;
+}
+
+.institution {
+  color: #444;
+}
+
+/* ── Links ── */
+a {
+  color: #1f5fa6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0d3d6e;
+  text-decoration: underline;
 }
